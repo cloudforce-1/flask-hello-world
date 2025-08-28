@@ -1,10 +1,16 @@
-from flask import Flask
+import streamlit as st
 
-app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return "Hello!"
+st.write("Hello")
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+st.title("Python App")
+
+
+st.header("WeB App")
+
+
+print("This message will only show up in your terminal.")
+
+
+name = "World"
+st.write(f"Hello, {name}!")
